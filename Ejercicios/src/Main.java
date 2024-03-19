@@ -1,7 +1,14 @@
+import ejercicio1.Calculadora;
+import ejercicio1.Punto;
+
+import java.io.Console;
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         // Press Opt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
@@ -13,5 +20,19 @@ public class Main {
             // for you, but you can always add more by pressing Cmd+F8.
             System.out.println("i = " + i);
         }
+        Punto p1 = new Punto(0, 0);
+        Punto p2 = new Punto(6, 2);
+        System.out.println(p1.calcularDistancia(p2));
+        Calculadora calculadora = new Calculadora();
+        System.out.println(calculadora.sumar(3,3));
+        System.out.println(calculadora.restar(3,3));
+        System.out.println(calculadora.dividir(3,3));
+        System.out.println(calculadora.multiplicar(3,3));
+
+
+
+
+
+        Integer numero = scanner.nextInt();
     }
 }

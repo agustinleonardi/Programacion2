@@ -1,31 +1,32 @@
 package ejercicio1;
 
 public class Punto {
-    private Long X;
-    private Long Y;
+    private double X;
+    private double Y;
 
-    public Long getX() {
+    public Punto(double x, double y) {
+        X = x;
+        Y = y;
+    }
+
+    public double getX() {
         return X;
     }
 
-    public void setX(Long x) {
+    public void setX(double x) {
         X = x;
     }
 
-    public Long getY() {
+    public double getY() {
         return Y;
     }
 
-    public void setY(Long y) {
+    public void setY(double y) {
         Y = y;
     }
-    public Long distancia(Long num1, Long num2){
-        this.X=num1;
-        this.Y=num2;
-        if (X>=Y){
-            return X-Y;
-        }else{
-            return Y-X;
-        }
+    public double calcularDistancia(Punto otro){
+       double x = this.X - otro.X;
+       double y = this.Y - otro.Y;
+       return Math.sqrt(x * x + y * y );
     }
 }
