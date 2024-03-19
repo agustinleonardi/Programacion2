@@ -1,18 +1,15 @@
 package ejercicio1.vehiculo;
 
 public class Coche extends Vehiculo{
-    private Long numeroPasajeros;
+    private String numeroPasajeros;
 
-    @Override
-    public Long propiedades() {
-        return super.propiedades()+ this.getNumeroPasajeros();
-    }
-
-    public Long getNumeroPasajeros() {
-        return numeroPasajeros;
-    }
-
-    public void setNumeroPasajeros(Long numeroPasajeros) {
+    public Coche(String marca, String modelo, String numeroRuedas, String numeroPasajeros) {
+        super(marca, modelo, numeroRuedas);
         this.numeroPasajeros = numeroPasajeros;
     }
+
+    public String obtenerPropiedades() {
+        return super.obtenerPropiedades()+ this.numeroPasajeros;
+    }
+
 }

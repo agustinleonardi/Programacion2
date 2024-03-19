@@ -1,18 +1,15 @@
 package ejercicio1.vehiculo;
 
 public class Moto extends Vehiculo{
-    private Long cilindrada;
+    private String cilindrada;
 
-    @Override
-    public Long propiedades() {
-        return super.propiedades()+ this.getCilindrada();
-    }
-
-    public Long getCilindrada() {
-        return cilindrada;
-    }
-
-    public void setCilindrada(Long cilindrada) {
+    public Moto(String marca, String modelo, String numeroRuedas, String cilindrada) {
+        super(marca, modelo, numeroRuedas);
         this.cilindrada = cilindrada;
     }
+
+    public String obtenerPropiedades() {
+        return super.obtenerPropiedades()+ this.cilindrada;
+    }
+
 }
