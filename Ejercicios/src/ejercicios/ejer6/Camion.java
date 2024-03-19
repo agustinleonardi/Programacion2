@@ -1,4 +1,4 @@
-package ejercicio1.vehiculo;
+package ejercicios.ejer6;
 
 public class Camion extends Vehiculo {
     public Camion(String marca, String modelo, String cantidadRuedas, String cantidadpuertas) {

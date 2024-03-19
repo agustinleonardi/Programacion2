@@ -1,4 +1,4 @@
-package ejercicio1.animal;
+package ejercicios.ejer5;
 
 public class Animal {
     private String name;

@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejercicios.ejer1;
 
 public class Estudiante {
     private String nombre;

@@ -1,4 +1,4 @@
-package ejercicio1.vehiculo;
+package ejercicios.ejer6;
 
 public class Moto extends Vehiculo{
     private String cilindrada;

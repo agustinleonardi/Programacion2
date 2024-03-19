@@ -1,6 +1,4 @@
-package ejercicio1;
-
-import javax.print.DocFlavor;
+package ejercicios.ejer2;
 
 public class Calculadora {
 

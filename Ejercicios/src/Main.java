@@ -1,12 +1,11 @@
-import ejercicio1.Calculadora;
-import ejercicio1.Punto;
-import ejercicio1.empleado.Director;
-import ejercicio1.empleado.Empleado;
-import ejercicio1.empleado.Programador;
-import ejercicio1.vehiculo.Camion;
-import ejercicio1.vehiculo.Vehiculo;
+import ejercicios.ejer2.Calculadora;
+import ejercicios.ejer3.Punto;
+import ejercicios.ejer7.Director;
+import ejercicios.ejer7.Empleado;
+import ejercicios.ejer7.Programador;
+import ejercicios.ejer6.Camion;
+import ejercicios.ejer6.Vehiculo;
 
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

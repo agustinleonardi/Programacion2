@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejercicios.ejer4;
 
 public class Rectangulo {
     private Long Alto;

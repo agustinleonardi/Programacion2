@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejercicios.ejer3;
 
 public class Punto {
     private double X;

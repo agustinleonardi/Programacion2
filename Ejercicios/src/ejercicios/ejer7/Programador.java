@@ -1,4 +1,4 @@
-package ejercicio1.empleado;
+package ejercicios.ejer7;
 
 public class Programador extends Empleado{
     public Programador(String nombre, double salario, String departamento) {
