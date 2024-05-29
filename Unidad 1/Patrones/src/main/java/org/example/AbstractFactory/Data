@@ -1,0 +1,10 @@
+Que crear?
+
+1- Una interfaz FabricaAnimales que declare métodos para crear distintos tipos de animales.
+
+   Clases concretas que implementen esta interfaz y creen instancias específicas de productos (animales en este caso).
+
+
+   Utilidad:
+   Permite la creación de familias de objetos relacionados sin especificar sus clases concretas.
+   Facilita el intercambio de familias de productos sin alterar el código que usa los productos.

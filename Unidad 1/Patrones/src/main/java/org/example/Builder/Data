@@ -1,0 +1,35 @@
+¿Qué crear?
+
+1- Una clase producto, por ejemplo, Auto.
+
+Una clase Builder anidada dentro de la clase producto con métodos para configurar paso a paso los atributos del producto.
+
+public static class Builder{
+        private Auto auto;
+
+        public Builder(){
+            auto = new Auto();
+        }
+
+        public Builder marca(String marca){
+            auto.marca=marca;
+            return this;
+        }
+
+        public Builder modelo(String modelo){
+            auto.modelo= modelo;
+            return this;
+        }
+        public Builder color(String color){
+            auto.color=color;
+            return this;
+        }
+        public Auto build (){
+            return auto;
+        }
+    }
+
+Utilidad:
+
+Separa la construcción de un objeto complejo de su representación, permitiendo el mismo proceso de construcción para crear diferentes representaciones.
+Ideal para cuando la creación de objetos implica muchos pasos o muchos parámetros opcionales.

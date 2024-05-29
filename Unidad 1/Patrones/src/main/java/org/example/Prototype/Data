@@ -1,0 +1,15 @@
+¿Qué crear?
+
+Una interfaz Clonable con un método para clonar objetos.
+
+Clases concretas que implementen esta interfaz y definan cómo se deben clonar.
+
+
+
+
+
+
+Utilidad:
+
+Permite copiar objetos existentes sin hacer el código dependiente de sus clases.
+Útil para crear objetos en un contexto de alto rendimiento, donde la creación de objetos desde cero es costosa.

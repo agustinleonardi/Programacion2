@@ -1,0 +1,13 @@
+¿Qué crear?
+
+Una interfaz target que define cómo los clientes esperan interactuar con los servicios.
+
+public interface IConexion {
+    void enviarMensaje(String mensaje);
+}
+
+Una clase Adapter que adapta una interfaz existente (la interfaz del adaptado) a la interfaz target.
+Utilidad:
+
+Permite que interfaces incompatibles trabajen juntas.
+Reutiliza clases existentes incluso si sus interfaces no coinciden con las necesidades del código actual.

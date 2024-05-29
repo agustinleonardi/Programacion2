@@ -1,0 +1,21 @@
+Qué crear?
+
+1- Una clase que garantice una única instancia.
+
+    public final class Configuracion {
+        private static Configuracion instance;
+    }
+
+2- Un método estático para obtener esta instancia.
+
+public static Configuracion getInstance() {
+        if (instance == null) { // Primera comprobación
+            instance = new Configuracion();
+        }
+        return instance;
+    }
+
+Utilidad:
+
+Asegura que una clase tenga solo una instancia, y proporciona un punto de acceso global a ella.
+Útil para manejar recursos compartidos como conexiones a bases de datos o configuraciones del sistema.
