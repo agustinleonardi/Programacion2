@@ -3,11 +3,6 @@ package com.example.camiones.service;
 import com.example.camiones.connections.HibernateUtil;
 import com.example.camiones.dto.CamionDto;
 import com.example.camiones.entities.Camion;
-import com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
@@ -33,7 +28,6 @@ public class CamionService {
             transaction.commit();
 
             logger.info("Camion añadido con exito", camion);
-
         }catch(Exception e){
             if(transaction != null){
                 transaction.rollback();

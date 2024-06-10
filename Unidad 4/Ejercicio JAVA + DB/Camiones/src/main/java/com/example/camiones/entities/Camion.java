@@ -24,5 +24,9 @@ public class Camion {
     @OneToMany(mappedBy = "camionAsignado")
     private List<Paquete> paquetes = new ArrayList<>();
 
+    public void addPaquete(Paquete paquete){
+        paquetes.add(paquete);
+        paquete.setCamionAsignado(this);
+    }
 
 }
